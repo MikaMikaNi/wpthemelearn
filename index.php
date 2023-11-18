@@ -1,12 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>WP THEME</title>
-</head>
-<body>
+<?php
+/**
+ *  Main file
+ * 
+ * @package Aquila
+ * 
+ */
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+    get_header();
 
-</body>
-</html>
+?>
+<div class="content">Content</div>
+<?php get_footer();
