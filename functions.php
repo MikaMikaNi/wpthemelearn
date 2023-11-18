@@ -15,7 +15,8 @@ function aquila_enqueue_scripts() {
 
     //Register scripts
     wp_register_script("main-js", get_template_directory_uri() ."/assets/main.js", [], filemtime(get_template_directory() ."/assets/main.js") ,true);
-    wp_register_script("bootstrap-js", get_template_directory_uri() ."/assets/src/library/js/bootstrap.min.js", ['jquery'], false ,true);
+    wp_register_script("bootstrap-js", get_template_directory_uri() ."/assets/src/library/js/bootstrap.bundle.js", ['popper-js'], false ,true);
+    wp_register_script("popper-js", get_template_directory_uri() ."/assets/src/library/js/popper.min.js", ['jquery'], false ,true);
 
     //Enqueue styles
     wp_enqueue_style("style-css");
@@ -23,6 +24,7 @@ function aquila_enqueue_scripts() {
 
     //Enqueue scripts
     wp_enqueue_script("main-js");
+    wp_enqueue_script("popper-js");
     wp_enqueue_script("bootstrap-js");
 
 }
