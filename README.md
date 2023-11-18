@@ -1,6 +1,6 @@
  [WordPress Theme - Aquila]
 
 
-git add .
-git commit -m ""
-git push -u origin main
+git add . \
+git commit -m " \
+git push -u origin main \
